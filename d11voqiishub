@@ -363,7 +363,7 @@ local SettingsTable = {
 	AimMode = "Prediction";
 	AimlockMode = "LeftClick";
 	AimbotVelocity = 5;
-	CmdBarImage = "http://www.roblox.com/asset/?id=2812081613";
+	CmdBarImage = "http://www.roblox.com/asset/?id=6365069892";
 	CmdBarKey = "Quote"
 }
 
@@ -439,8 +439,8 @@ coroutine.resume(coroutine.create(function()
 	else
 		VanPart:Destroy()
 	end
-	Players:Chat("I am a CyAdmin User") -- new admin
-	Players:Chat("Hey I'm a cyrus' streets admin user1") -- legacy admin
+	Players:Chat("I am a d11voqii's hub User") -- new admin
+	Players:Chat("Hey I'm a d11voqii's hub user") -- legacy admin
 end))
 
 -- [[ End ]] -- 
@@ -486,7 +486,7 @@ getgenv().runHotkeys = function(ConfigToRun)
 	AimMode = RunSettings.AimMode or "Prediction";
 	AimlockMode = RunSettings.AimlockMode or "LeftClick"
 	AimbotVelocity = RunSettings.AimbotVelocity or 5
-	CmdBarImage = RunSettings.CmdBarImage or "http://www.roblox.com/asset/?id=2812081613"
+	CmdBarImage = RunSettings.CmdBarImage or "http://www.roblox.com/asset/?id=6365069892"
 	CmdBarKey = RunSettings.CmdBarKey or "Quote"
 end
 if readfile and writefile then 
@@ -544,7 +544,7 @@ getgenv().CheckCommand = function(Chat)
 	if CommandFound then
 		local CommandWorked,Error = pcall(CommandFound,Arguments)
 		if not CommandWorked then 
-			notif("Command errored: "..CommandName,"Send this to jack: "..Error,10,nil)
+			notif("Command errored: "..CommandName,"Send this to d11voqii: "..Error,10,nil)
 		end
 	end
 end
@@ -675,7 +675,7 @@ if not Torso then return end
 	BodyGyro.CFrame = Torso.CFrame
 	BodyVelocity.MaxForce = Vector3.new(9e9,9e9,9e9)
 	BodyVelocity.Velocity = Vector3.new(0,0.1,0)
-	BodyVelocity.Name = "CyAdminFly"
+	BodyVelocity.Name = "D11AdminFly"
 	local Table1 = {['W'] = 0;['A'] = 0;['S'] = 0;['D'] = 0;}
 	if not AirwalkOn then 
 		CheckCommand("airwalk")
@@ -3330,5 +3330,6 @@ end))
 
 -- [[ End ]] --
 
-notif("Cyrus' Streets admin","took " .. string.format("%.6f",tick()-Tick) .. " seconds",10,"rbxassetid://2474242690")
+notif("d11voqii's hub (the streets admin)","took " .. string.format("%.6f",tick()-Tick) .. " seconds",10,"rbxassetid://2474242690")
 notif("Newest Update","THIS WILL NOT BE UPDATED",10,nil)
+notif("julia is d11voqiis/phillips cum slut")
