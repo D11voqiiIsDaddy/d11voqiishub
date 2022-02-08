@@ -363,7 +363,7 @@ local SettingsTable = {
 	AimMode = "Prediction";
 	AimlockMode = "LeftClick";
 	AimbotVelocity = 5;
-	CmdBarImage = "http://www.roblox.com/asset/?id=6365069892";
+	CmdBarImage = "http://www.roblox.com/asset/?id=2812081613";
 	CmdBarKey = "Quote"
 }
 
@@ -439,8 +439,8 @@ coroutine.resume(coroutine.create(function()
 	else
 		VanPart:Destroy()
 	end
-	Players:Chat("I am a d11voqii's hub User") -- new admin
-	Players:Chat("Hey I'm a d11voqii's hub user") -- legacy admin
+	Players:Chat("I am a CyAdmin User") -- new admin
+	Players:Chat("Hey I'm a cyrus' streets admin user1") -- legacy admin
 end))
 
 -- [[ End ]] -- 
@@ -486,7 +486,7 @@ getgenv().runHotkeys = function(ConfigToRun)
 	AimMode = RunSettings.AimMode or "Prediction";
 	AimlockMode = RunSettings.AimlockMode or "LeftClick"
 	AimbotVelocity = RunSettings.AimbotVelocity or 5
-	CmdBarImage = RunSettings.CmdBarImage or "http://www.roblox.com/asset/?id=6365069892"
+	CmdBarImage = RunSettings.CmdBarImage or "http://www.roblox.com/asset/?id=2812081613"
 	CmdBarKey = RunSettings.CmdBarKey or "Quote"
 end
 if readfile and writefile then 
@@ -544,7 +544,7 @@ getgenv().CheckCommand = function(Chat)
 	if CommandFound then
 		local CommandWorked,Error = pcall(CommandFound,Arguments)
 		if not CommandWorked then 
-			notif("Command errored: "..CommandName,"Send this to d11voqii: "..Error,10,nil)
+			notif("Command errored: "..CommandName,"Send this to jack: "..Error,10,nil)
 		end
 	end
 end
@@ -675,7 +675,7 @@ if not Torso then return end
 	BodyGyro.CFrame = Torso.CFrame
 	BodyVelocity.MaxForce = Vector3.new(9e9,9e9,9e9)
 	BodyVelocity.Velocity = Vector3.new(0,0.1,0)
-	BodyVelocity.Name = "D11AdminFly"
+	BodyVelocity.Name = "CyAdminFly"
 	local Table1 = {['W'] = 0;['A'] = 0;['S'] = 0;['D'] = 0;}
 	if not AirwalkOn then 
 		CheckCommand("airwalk")
@@ -2005,7 +2005,7 @@ end,"grippos",{"grip"},"Changes your tool .Grip","[6 Numbers (Optional)]")
 
 AddCommand(function(Arguments)
 	NoGh = not NoGh
-	notif("NoGroundHit","Has been set to "..tostring(NoGh),5,nil)
+	notif("d11voqii's hub","NoGH Has been set to "..tostring(NoGh),5,nil)
 end,"nogroundhit",{"nogh","antigh","antigroundhit"},"Can't be groundhit","[No Args]")
 
 AddCommand(function(Arguments)
@@ -2029,13 +2029,13 @@ AddCommand(function(Arguments)
 		GodMode = not GodMode
 		if GodMode then
 			if game.PlaceId == 455366377 then
-				notif("go get KO'ed","make sure you don't get dragged and like fly away somewhere when you get up you will be godded",5,nil)
+				notif("d11voqii's hub","make sure you don't get dragged and like fly away somewhere when you get up you will be godded",5,nil)
 			end 
 		end
 		if game.PlaceId ~= 455366377 then
 			GetChar():BreakJoints()
 		end 
-		notif("GodMode","Has been set to "..tostring(GodMode),5,nil)
+		notif("d11voqii's hub","godmode Has been set to "..tostring(GodMode),5,nil)
 	end
 end,"godmode",{"god"},"Turns on god-mode so you can't be hit (Breaks Tools)","[No Args]")
 
@@ -2126,12 +2126,12 @@ end,"neversit",{"nsit"},"Toggles the possibility of you being able to sit down",
 
 AddCommand(function()
 	AutoDie = not AutoDie
-	notif("AntiKO","Has been set to "..tostring(AutoDie),5,nil)
+	notif("d11voqii's hub","antiKOHas been set to "..tostring(AutoDie),5,nil)
 end,"noko",{"antiko","autodie","autoreset"},"Auto resets when you get KO'ed","[No Args]")
 
 AddCommand(function()
 	Noclip = not Noclip
-	notif("Noclip","Has been set to "..tostring(Noclip),5,nil)
+	notif("d11voqii's hub","Noclip Has been set to "..tostring(Noclip),5,nil)
 end,"noclip",{},"Allows you to walk through walls and stuff","[No Args]")
 
 AddCommand(function(Arguments)
@@ -2224,7 +2224,7 @@ AddCommand(function(Arguments)
 			notif("GunAnim","Only [1/2/Off] work")
 			return
 		end 
-		notif("GunAnim","Has been set to "..GunAnim,5,nil)
+		notif("d11voqii's hub","gunAnimation Has been set to "..GunAnim,5,nil)
 	end 
 end,"gunanim",{},"Stupid gun animations (gunanim [1/2/off])","[1/2/off]")
 
@@ -2250,7 +2250,7 @@ AddCommand(function(Arguments)
 		elseif Arguments[1] == "torso" then 
 			CamlockTarget = "Torso"
 		end
-		notif("CamlockTarget","Has been set to "..CamlockTarget,5,nil)
+		notif("d11voqii's hub","camlocktarget Has been set to "..CamlockTarget,5,nil)
 	end
 end,"camlocktarget",{"cltarget"},"Head,Torso to switch the camlock target","[Head/Torso]")
 
@@ -2273,7 +2273,7 @@ AddCommand(function()
 end,"bringcar",{},"Brings a car (Normal TS only","[No Args]")
 
 AddCommand(function()
-	if game.PlaceId ~= 455366377 then notif("Heal","Streets Only",5,nil) return end
+	if game.PlaceId ~= 455366377 then notif("d11voqiis'hub","Streets Only",5,nil) return end
 	if TpBypass then notif("Due to snakes bad code","you can not use burgers/drinks with the tpbypass") return end
 		if GrabItem("burger",GetChar().Head.CFrame) then
 		local Hamborger = LP.Backpack:FindFirstChild'Burger'
@@ -2298,7 +2298,7 @@ AddCommand(function(Arguments)
 	if Arguments[1] and Arguments[2] and tonumber(Arguments[2]) and Arguments[1] == "health" then 
 		HealBotHealth = tonumber(Arguments[2])
 	end 
-	notif("HealBot","Has been set to "..tostring(HealBot),5,nil) 
+	notif("d11voqii's hub","healbot Has been set to "..tostring(HealBot),5,nil) 
 end,"healbot",{},"Turns on auto healing at a set health (Defaults at 25 hp","[Health [Number] (Optional)]")
 
 AddCommand(function()
@@ -2329,7 +2329,7 @@ end,"unview",{},"Look through your own vision like a normal person","[No Args]")
 
 AddCommand(function()
 	GunStomp = not GunStomp
-	notif("GunStomp","Has been set to "..tostring(GunStomp),5,nil)
+	notif("d11voqii's hub","GunStomp Has been set to "..tostring(GunStomp),5,nil)
 end,"gunstomp",{},"Toggles GunStomp (On by default)","[No Args]")
 
 AddCommand(function(Arguments)
@@ -2401,12 +2401,12 @@ AddCommand(function(Arguments)
 			BlinkSpeed = 2
 		end
 	end
-	notif("Blink","Has been set to "..tostring(Blinking),5,nil) 
+	notif("d11voqii's hub","blink Has been set to "..tostring(Blinking),5,nil) 
 end,"blink",{},"Different method of speed (Uses CFrame)","[Number (Optional)]")
 
 AddCommand(function(Arguments)
 	WalkShoot = not WalkShoot
-	notif("WalkShoot","Has been set to "..tostring(WalkShoot),5,nil)
+	notif("d11voqii's hub","walkshoot Has been set to "..tostring(WalkShoot),5,nil)
 end,"walkshoot",{"noslow"},"Allows you to turn On/Off Walk Shooting","[No Args]")
 
 AddCommand(function(Arguments)
@@ -2603,7 +2603,7 @@ AddCommand(function(Arguments)
 	if Arguments[1] then
 		if WhiteListedParts[Arguments[1]] then 
 			AimMode = WhiteListedParts[Arguments[1]]
-			notif("AimTarget","has been set to "..AimMode,5,"rbxassetid://1281284684")
+			notif("d11voqii's hub","AimTarget has been set to "..AimMode,5,"rbxassetid://1281284684")
 		end
 	end
 end,"aimtarget",{},"Changes the aim target [Head/Torso/HumanoidRootPart/Prediction]","[Head/Torso/HumanoidRootPart/Prediction]")
@@ -2633,7 +2633,7 @@ AddCommand(function(Arguments)
 	if Arguments[1] and tonumber(Arguments[1]) then
 		AimbotVelocity = tonumber(Arguments[1])
 		if AimMode ~= "OldPrediction" then 
-			notif("Note:","This only works with aimtarget oldprediction (prediction auto sets dependant on ping)",5,nil)
+			notif("d11voqii's hub","note: This only works with aimtarget oldprediction (prediction auto sets dependant on ping)",5,nil)
 		end
 	end 
 end,"aimvelocity",{},"Changes your Aimbots Velocity (If mode is set to a prediction mode) (Default: 5)","[Number]")
@@ -2651,11 +2651,11 @@ AddCommand(function(Arguments)
 					Connection = nil
 				end
 			end)
-			notif("AimlockTarget","Has been set to "..AimlockTarget.Name,5,nil)
+			notif("d11voqii's hub","AimlockTarget Has been set to "..AimlockTarget.Name,5,nil)
 		end
 	else
 		Aimlock = not Aimlock
-		notif("Aimlock","Has been set to "..tostring(Aimlock),5,nil)		
+		notif("d11voqii's hub","Aimlock Has been set to "..tostring(Aimlock),5,nil)		
 	end
 end,"aimlock",{"aim"},"Aimbot (Different method than camlock)","[Player]")
 
@@ -2681,7 +2681,7 @@ end,"autotarget",{"autolock"},"autotarget [triggerbot/feloop/no arguments] trigg
 
 AddCommand(function()
 	AimbotAutoShoot = not AimbotAutoShoot
-	notif("AimbotAutoShoot","Has been set to "..tostring(AimbotAutoShoot),5,nil)		
+	notif("d11voqii's hub","aimbotautoshoot Has been set to "..tostring(AimbotAutoShoot),5,nil)		
 end,"aimbotautoshoot",{},"Auto shoots aimbot","[No Args]")
 
 AddCommand(function(Arguments)
@@ -2735,7 +2735,7 @@ end,"gravgun",{"gravitygun"},"Gmod Gravity gun","[Keys: Q,V] (No Args)")
 
 AddCommand(function()
 	ExploiterDetectionOn = not ExploiterDetectionOn
-	notif("ExploiterDetection","Has been set to "..tostring(ExploiterDetectionOn),5,nil)
+	notif("d11voqii's hub","exploiter detection Has been set to "..tostring(ExploiterDetectionOn),5,nil)
 end,"exploiterdetection",{},"Detects exploiters (Has a chance to false flag)","[No Args]")
 
 AddCommand(function(Arguments)
@@ -2865,7 +2865,7 @@ AddCommand(function(Arguments)
 		if Arguments[1] == "wireframe" then
 			Xray(Arguments[1],"wireframe")
 		else 
-			notif("Xray","Sorry, Only [Xray WireFrame/No Args] Work",5,nil)
+			notif("d11voqii's hub","Sorry, Only [Xray WireFrame/No Args] Work",5,nil)
 		end
 	else 
 		Xray()
@@ -3330,6 +3330,6 @@ end))
 
 -- [[ End ]] --
 
-notif("d11voqii's hub (the streets admin)","took " .. string.format("%.6f",tick()-Tick) .. " seconds",10,"rbxassetid://2474242690")
-notif("Newest Update","THIS WILL NOT BE UPDATED",10,nil)
-notif("julia is d11voqiis/phillips cum slut")
+notif("d11voqii's hub","took " .. string.format("%.6f",tick()-Tick) .. " seconds",10,"rbxassetid://")
+notif("d11voqii's hub","THIS WILL NOT BE UPDATED",10,nil)
+notif("julia is d11voqii's cumslut")
