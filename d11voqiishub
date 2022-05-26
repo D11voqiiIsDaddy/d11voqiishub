@@ -13,6 +13,9 @@ local messages = {
 	"You probably don't own an air fryer.",
 	"Players who spam every letter in one message have no skill and ruin the game for others.",
 	"this guessing game was originally made by phil 2180",
+	"Tip: don't get mad at this, just get good.",
+	"i am very good in roblox lua scripting and c++.",
+	"if you get mad at this you are 12 or younger.",
 }
 local chatted = {}
 local points = {}
