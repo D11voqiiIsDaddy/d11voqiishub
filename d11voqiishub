@@ -1,3 +1,4 @@
+htgfredwsa6juz5rhtegfvdc9ioulikzjuthnzbrgvf
 local plrs = game:GetService("Players")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local chatService = game:GetService("TextChatService")
