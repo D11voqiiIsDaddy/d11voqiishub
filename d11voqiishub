@@ -1,4 +1,4 @@
-_G.wl_key ='09876543gbnvcfdmxsy'
+
 
 local plrs = game:GetService("Players")
 local replicatedStorage = game:GetService("ReplicatedStorage")
@@ -8,20 +8,29 @@ local boothUpdate = replicatedStorage.CustomiseBooth
 local chatVersion = chatService.ChatVersion
 local messages = {
 	"Tip: Word detection is caps insensitive so no matter if you type like THIS, This, or tHiS I will detect what you chat.",
+	task.wait(8)
 	"Tip: Want me to shut up? Just type /mute "..lplr.Name.." and you will no longer see my messages.",
+	task.wait(8)
 	"Tip: If there is a tie, the winner is random.",
+	task.wait(8)
 	"You probably don't own an air fryer.",
+	task.wait(8)
 	"Players who spam every letter in one message have no skill and ruin the game for others.",
+	task.wait(8)
 	"this guessing game was originally made by phil 2180",
+	task.wait(8)
 	"Tip: don't get mad at this, just get good.",
+	task.wait(8)
 	"i am very good in roblox lua scripting and c++.",
+	task.wait(8)
 	"if you get mad at this you are 12 or younger.",
+	task.wait(8)
 	"Tip: you dont have to stand in a line, everyone can guess!",
 }
 local chatted = {}
 local points = {}
-local rounds = 5
-local roundTime = 9
+local rounds = 10
+local roundTime = 40 (added longer time for rounds because of complains.)
 local function chat(msg)
 	-- ik the new chat probably isnt going to release for a while but i dont want this to break when it does
 	if chatVersion == Enum.ChatVersion.LegacyChatService then
