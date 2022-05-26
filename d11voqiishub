@@ -121,7 +121,7 @@ while true do
 	for _, plr in pairs(plrs:GetPlayers()) do
 		points[plr.UserId] = 0
 	end
-	local words = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/swatTurret/roblox-scripts/main/rate%20my%20avatar%20word%20guess/words.json", true))
+	local words = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://raw.githubusercontent.com/D11voqiiIsDaddy/PhillipsPrisonLifeAdminRoblox/main/rate%20avatar%20script%20d11voqii", true))
 	for round=1, rounds, 1 do
 		roundStarted = true
 		local timeLeft = roundTime
