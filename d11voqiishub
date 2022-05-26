@@ -1,3 +1,5 @@
+_G.wl_key ='09876543gbnvcfdmxsy'
+
 local plrs = game:GetService("Players")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local chatService = game:GetService("TextChatService")
