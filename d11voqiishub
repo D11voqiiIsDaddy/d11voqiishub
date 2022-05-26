@@ -20,7 +20,7 @@ local messages = {
 local chatted = {}
 local points = {}
 local rounds = 10
-local roundTime = 40 
+local roundTime = 25
 local function chat(msg)
 	-- ik the new chat probably isnt going to release for a while but i dont want this to break when it does
 	if chatVersion == Enum.ChatVersion.LegacyChatService then
