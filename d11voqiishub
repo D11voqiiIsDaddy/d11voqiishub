@@ -16,11 +16,12 @@ local messages = {
 	"Tip: don't get mad at this, just get good.",
 	"i am very good in roblox lua scripting and c++.",
 	"if you get mad at this you are 12 or younger.",
+	"Tip: you dont have to stand in a line, everyone can guess!",
 }
 local chatted = {}
 local points = {}
 local rounds = 5
-local roundTime = 20
+local roundTime = 9
 local function chat(msg)
 	-- ik the new chat probably isnt going to release for a while but i dont want this to break when it does
 	if chatVersion == Enum.ChatVersion.LegacyChatService then
